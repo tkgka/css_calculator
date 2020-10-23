@@ -7,25 +7,72 @@
     <script src="build/calculator.min.js"></script>
     <style>
         table{
+            margin: 20px;
+            border-radius: 20px;
+            border: none;
             border-collapse: collapse;
+            background-color: black;
         }
-        .btn{
+        .num{
+            border-radius: 30px;
+            background-color: #333333;
+            border: none;
+            color:#fff;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            width: 100%;
+            height: 50px;
+        }
+        .top{
+            
+            border-radius: 30px;
+            background-color: #a4a4a4;
+            border: none;
+            color:rgb(32, 32, 32);
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
+            width: 100%;
+            height: 50px;
+        }
+        .side{
+            border-radius: 30px;
+            background-color: #fd9400;
+            border: none;
+            color:#fff;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 15px;
+            cursor: pointer;
             width: 100%;
             height: 50px;
         }
         #input_area{
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(39, 39, 39);
+            color: white;
             margin-right: 50px;
-            width: 98%;
+            width: 99.5%;
             height: 20px;
         }
         #output_area{
-            width: 98%;
+            border-radius: 20px;
+            border: none;
+            background-color: rgb(214, 214, 214);
+            width: 99.5%;
             height: 20px;
         }
     </style>
 </head>
 <body>
-     <table border="2" width="415px">
+     <table width="400px">
         <tr>
             <td colspan="4"><input type="text" value="0" id="input_area" disabled></td>
         </tr>
@@ -33,33 +80,33 @@
             <td colspan="4"><input type="text" value="0" id="output_area" disabled></td>
         </tr>
         <tr>
-            <td><input type="button" value="%" class="btn" onclick="input_opr('%')"></td>
-            <td colspan="2"><input type="button" value="AC" class="btn" onclick="c_key()"></td>
-            <td><input type="button" value="←" class="btn" onclick="backspace()"></td>
+            <td><input type="button" value="%" class="top" onclick="input_opr('%')"></td>
+            <td colspan="2"><input type="button" value="AC" class="top" onclick="c_key()"></td>
+            <td><input type="button" value="←" class="side" onclick="backspace()"></td>
         </tr>
         <tr>
-            <td><input type="button" value="7" class="btn" onclick="input_num('7')"></td>
-            <td><input type="button" value="8" class="btn" onclick="input_num('8')"></td>
-            <td><input type="button" value="9" class="btn" onclick="input_num('9')"></td>
-            <td><input type="button" value="/" class="btn" onclick="input_opr('/')"></td>
+            <td><input type="button" value="7" class="num" onclick="input_num('7')"></td>
+            <td><input type="button" value="8" class="num" onclick="input_num('8')"></td>
+            <td><input type="button" value="9" class="num" onclick="input_num('9')"></td>
+            <td><input type="button" value="/" class="side" onclick="input_opr('/')"></td>
         </tr>
         <tr>
-            <td><input type="button" value="4" class="btn" onclick="input_num('4')"></td>
-            <td><input type="button" value="5" class="btn" onclick="input_num('5')"></td>
-            <td><input type="button" value="6" class="btn" onclick="input_num('6')"></td>
-            <td><input type="button" value="*" class="btn" onclick="input_opr('*')"></td>
+            <td><input type="button" value="4" class="num" onclick="input_num('4')"></td>
+            <td><input type="button" value="5" class="num" onclick="input_num('5')"></td>
+            <td><input type="button" value="6" class="num" onclick="input_num('6')"></td>
+            <td><input type="button" value="*" class="side" onclick="input_opr('*')"></td>
         </tr>
         <tr>
-            <td><input type="button" value="1" class="btn" onclick="input_num('1')"></td>
-            <td><input type="button" value="2" class="btn" onclick="input_num('2')"></td>
-            <td><input type="button" value="3" class="btn" onclick="input_num('3')"></td>
-            <td><input type="button" value="-" class="btn" onclick="input_opr('-')"></td>
+            <td><input type="button" value="1" class="num" onclick="input_num('1')"></td>
+            <td><input type="button" value="2" class="num" onclick="input_num('2')"></td>
+            <td><input type="button" value="3" class="num" onclick="input_num('3')"></td>
+            <td><input type="button" value="-" class="side" onclick="input_opr('-')"></td>
         </tr>
         <tr>
-            <td><input type="button" value="." class="btn" onclick="dot()"></td>
-            <td><input type="button" value="0" class="btn" onclick="input_num('0')"></td>
-            <td><input type="button" value="=" class="btn" onclick="answer()"></td>
-            <td><input type="button" value="+" class="btn" onclick="input_opr('+')"></td>
+            <td><input type="button" value="." class="num" onclick="dot()"></td>
+            <td><input type="button" value="0" class="num" onclick="input_num('0')"></td>
+            <td><input type="button" value="=" class="num" onclick="answer()"></td>
+            <td><input type="button" value="+" class="side" onclick="input_opr('+')"></td>
         </tr>
     </table>
 </body>
