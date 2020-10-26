@@ -5,74 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-sinput_nume=1.0">
     <title>input_numculator</title>
     <script src="build/calculator.min.js"></script>
-    <style>
-        table{
-            margin: 20px;
-            border-radius: 20px;
-            border: none;
-            border-collapse: collapse;
-            background-color: black;
-        }
-        .num{
-            border-radius: 30px;
-            background-color: #333333;
-            border: none;
-            color:#fff;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 15px;
-            cursor: pointer;
-            width: 100%;
-            height: 50px;
-        }
-        .top{
-            
-            border-radius: 30px;
-            background-color: #a4a4a4;
-            border: none;
-            color:rgb(32, 32, 32);
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 15px;
-            cursor: pointer;
-            width: 100%;
-            height: 50px;
-        }
-        .side{
-            border-radius: 30px;
-            background-color: #fd9400;
-            border: none;
-            color:#fff;
-            text-align: center;
-            text-decoration: none;
-            display: inline-block;
-            font-size: 15px;
-            cursor: pointer;
-            width: 100%;
-            height: 50px;
-        }
-        #input_area{
-            border-radius: 20px;
-            border: none;
-            background-color: rgb(39, 39, 39);
-            color: white;
-            margin-right: 50px;
-            width: 99.5%;
-            height: 20px;
-        }
-        #output_area{
-            border-radius: 20px;
-            border: none;
-            background-color: rgb(214, 214, 214);
-            width: 99.5%;
-            height: 20px;
-        }
-    </style>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
 </head>
 <body>
-     <table width="400px">
+     <table>
         <tr>
             <td colspan="4"><input type="text" value="0" id="input_area" disabled></td>
         </tr>
@@ -81,7 +17,7 @@
         </tr>
         <tr>
             <td><input type="button" value="%" class="top" onclick="input_opr('%')"></td>
-            <td colspan="2"><input type="button" value="AC" class="top" onclick="c_key()"></td>
+            <td colspan="2"><input type="button" value="AC" class="top" id="ac_btn" onclick="c_key()"></td>
             <td><input type="button" value="←" class="side" onclick="backspace()"></td>
         </tr>
         <tr>

@@ -1,0 +1,99 @@
+@font-face{
+    font-family: "나눔스퀘어L";
+    src:url("NanumSquareL.ttf") format("truetype");
+}
+table{
+    width: 230px;
+    height:400px;
+    margin: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgb(14, 14, 14);
+}
+td{
+    width: 30px;
+    height: 30px;
+}
+.num{
+    border-radius: 30px;
+    background-color: #333333;
+    border: none;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 20pt;
+    font-family:나눔스퀘어L;
+}
+.num:hover{
+    background-color: #7c7c7c;
+    color:#fff;
+}
+.top{
+    border-radius: 30px;
+    background-color: #a4a4a4;
+    border: none;
+    color:rgb(32, 32, 32);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    font-size: 20pt;
+    font-family:나눔스퀘어L;
+}
+.top:hover{
+    background-color: #cfcfcf;
+    color:rgb(32, 32, 32);
+}
+.side{
+    border-radius: 30px;
+    background-color: #fd9400;
+    border: none;
+    color:#fff;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 15px;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    font-size: 20pt;
+    font-family:나눔스퀘어L;
+}
+.side:hover{
+    background-color: #ffbe64;
+    color:#fff;
+}
+#ac_btn{
+    width: 105px;
+}
+#input_area{
+    padding-left: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(39, 39, 39);
+    color: white;
+    margin-right: 50px;
+    width: 95%;
+    height: 40px;
+    font-size: 20pt;
+    font-family:나눔스퀘어L;
+}
+#output_area{
+    padding-right: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(214, 214, 214);
+    width: 95%;
+    height: 40px;
+    font-size: 20pt;
+    font-family:나눔스퀘어L;
+    text-align: right;
+}

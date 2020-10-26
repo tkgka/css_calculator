@@ -1,7 +1,11 @@
 function input_num(val){
     var input = document.getElementById('input_area').value;
-    if(input=="0")
+    if(input == "0")
         document.getElementById('input_area').value = val;
+    else if((input[input.length -1]=="0") && (isNaN(input[input.length -2]))){
+        input = input.replace(input[input.length -2] + '0', input[input.length -2]);
+        document.getElementById('input_area').value = input + val;
+    }
     else
         document.getElementById('input_area').value = input + val;
 }
